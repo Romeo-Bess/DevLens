@@ -1,0 +1,44 @@
+[
+  {
+    "id": "TC_001",
+    "requirement_id": "REQ_001",
+    "title": "Verify landing page simulator statistics",
+    "description": "User can paste public repo url and view diagnostic health index score",
+    "steps": [
+      "Navigate to '/'",
+      "Fill text field with 'https://github.com/vercel/next.js'",
+      "Click 'Run Diagnostics' submit button",
+      "Wait for results output"
+    ],
+    "assertions": [
+      "Output contains '94%'"
+    ]
+  },
+  {
+    "id": "TC_002",
+    "requirement_id": "REQ_002",
+    "title": "Verify dashboard metrics load correctly",
+    "description": "Verify dashboard layout bento metrics values change dynamically",
+    "steps": [
+      "Navigate to '/dashboard'",
+      "Select secondary repository from the breadcrumb selector"
+    ],
+    "assertions": [
+      "Dashboard metrics updates scores to '52%'"
+    ]
+  },
+  {
+    "id": "TC_003",
+    "requirement_id": "REQ_003",
+    "title": "Verify AI assistant chat logic",
+    "description": "Verify AI assistant console handles queries correctly",
+    "steps": [
+      "Navigate to '/ai-assistant'",
+      "Type 'Explain auth' inside chat console input field",
+      "Click send button"
+    ],
+    "assertions": [
+      "Reply contains 'supabase'"
+    ]
+  }
+]
