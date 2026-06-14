@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import { useRepoStore } from './store/repoStore'
 import { AppLayout } from './components/AppLayout'
 import { LandingPage } from './features/landing/LandingPage'
@@ -21,7 +21,7 @@ const App: React.FC = () => {
   }, [loadMockData])
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AppLayout>
         <Routes>
           <Route path="/" element={<LandingPage />} />
@@ -35,7 +35,7 @@ const App: React.FC = () => {
           <Route path="/ai-assistant" element={<AIAssistantView />} />
         </Routes>
       </AppLayout>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
