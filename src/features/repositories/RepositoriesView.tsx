@@ -57,7 +57,7 @@ export const RepositoriesView: React.FC = () => {
             type="url"
             value={repoUrl}
             onChange={(e) => setRepoUrl(e.target.value)}
-            className="flex-1 bg-surface border border-outline-variant/80 rounded-lg px-md py-sm font-mono text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20"
+            className="flex-1 bg-surface border border-outline-variant rounded-lg px-md py-sm font-mono text-sm focus:outline-none focus:border-primary w-full outline-none text-on-surface"
             placeholder="e.g. https://github.com/facebook/react"
             required
           />
